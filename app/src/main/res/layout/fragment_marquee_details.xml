@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MarqueeDetails">
+
+
+    <com.denzcoskun.imageslider.ImageSlider
+        android:id="@+id/image_slider"
+        android:layout_width="390dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="200dp"
+        android:layout_marginTop="57dp">
+    </com.denzcoskun.imageslider.ImageSlider>
+
+    <TextView
+        android:id="@+id/marquee_name"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_slider"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="7dp"
+        android:gravity="left"
+        android:text="Marquee Name"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/contact_marquee"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/image_slider"
+        android:layout_marginLeft="0dp"
+        android:layout_toRightOf="@id/marquee_name"
+        android:backgroundTint="@color/white"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:stateListAnimator="@null"
+        android:text="contact"
+        android:textColor="#04B60B"
+        android:textSize="12sp"
+        app:cornerRadius="20dp"
+        app:strokeColor="@color/black"
+        app:strokeWidth="1dp" />
+
+    <TextView
+        android:id="@+id/ratings_tv"
+        android:layout_width="55dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/marquee_name"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:text="Ratings: "
+        android:textColor="#0C0C0C"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ratings"
+        android:layout_width="150dp"
+        android:layout_height="27dp"
+        android:layout_below="@id/marquee_name"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@+id/ratings_tv"
+        android:text="Original Score"
+        android:textColor="#808080"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/location_marker"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/marquee_name"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/ratings"
+        android:src="@drawable/markeronearth"
+        android:tooltipText="view on map" />
+
+    <TextView
+        android:id="@+id/t5"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/ratings"
+        android:layout_marginLeft="5dp"
+        android:text="Services"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/t6"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/ratings"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@id/t5"
+        android:gravity="center"
+        android:text="View On Map"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/marquee_services"
+        android:layout_width="345dp"
+        android:layout_height="160dp"
+        android:layout_below="@id/t5"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/frame"
+        android:elevation="10dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:scrollbars="vertical"
+        android:stateListAnimator="@null"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        app:strokeColor="@color/black"
+        app:strokeWidth="1dp" />
+
+
+    <TextView
+        android:id="@+id/capacity"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/marquee_services"
+        android:layout_marginLeft="5dp"
+        android:text="Marquee's\nCapacity: "
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/capacity_value"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_below="@id/marquee_services"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/capacity"
+        android:text=" capaicty"
+        android:textColor="#808080"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/event_selection_activity"
+        android:layout_width="115dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/marquee_services"
+        android:layout_marginLeft="127dp"
+        android:layout_toRightOf="@+id/capacity_value"
+        android:backgroundTint="#04B60B"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:stateListAnimator="@null"
+        android:text="proceed"
+        android:textColor="@color/white"
+        app:cornerRadius="20dp"
+        app:strokeColor="@color/black"
+        app:strokeWidth="1dp" />
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="300dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/capacity"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:text="Click Here To See Distance From Marquee: "
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/distance_value"
+        android:layout_width="60dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/capacity"
+        android:layout_marginLeft="-20dp"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@id/distance"
+        android:textColor="#808080"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/comments_btn"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/distance_value"
+        android:layout_marginLeft="5dp"
+        android:text="Reviews"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/comments_btn"
+        android:layout_marginTop="5dp" />
+
+
+
+</RelativeLayout>

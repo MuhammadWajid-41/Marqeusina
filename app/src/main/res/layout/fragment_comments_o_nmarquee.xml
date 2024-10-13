@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".commentsONmarquee">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="Provide Feedback"
+        android:textColor="#808080"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/marquee_name"
+        android:layout_width="120dp"
+        android:layout_height="37dp"
+        android:layout_below="@id/tv"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="40dp"
+        android:gravity="left"
+        android:text="Select Marquee Name: "
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/packages"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/tv"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@id/marquee_name" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/marquee_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:text="Place Your comment below"
+        android:textColor="#808080"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/ed_comments"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/tv1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:backgroundTint="@color/black"
+        android:drawableLeft="@drawable/ic_baseline_comment_24"
+        android:drawableTint="#04B60B"
+        android:hint=" Comment here..."
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/user_ratings"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_below="@id/ed_comments"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:gravity="left"
+        android:text="Rate Marquee: "
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <SeekBar
+        android:id="@+id/slider1"
+        android:layout_width="160dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/ed_comments"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="18dp"
+        android:layout_toRightOf="@id/user_ratings"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:value="12.34"
+        android:valueFrom="0.0"
+        android:valueTo="50.0" />
+
+    <TextView
+        android:id="@+id/rat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ed_comments"
+        android:layout_marginTop="23dp"
+        android:layout_toRightOf="@id/slider1"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#808080"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/post_comment"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/rat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#04B60B"
+        android:elevation="10dp"
+        android:stateListAnimator="@null"
+        android:text="Post Feedback"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:cornerRadius="20dp"
+        app:strokeColor="@color/black"
+        app:strokeWidth="1dp" />
+
+</RelativeLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".mfprofileupdate">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:gravity="center"
+        android:text="Update Your Profile Here"
+        android:textColor="#808080"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="226dp"
+        android:layout_below="@id/tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/user_profile" />
+
+    <Button
+        android:id="@+id/select_btn"
+        android:layout_width="185dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/imageView"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#04B60B"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:stateListAnimator="@null"
+        android:text="Select Image"
+        android:textColor="@color/white"
+        app:cornerRadius="20dp"
+        app:strokeColor="@color/black"
+        app:strokeWidth="1dp" />
+
+    <TextView
+        android:id="@+id/for_error_show"
+        android:layout_width="250dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/select_btn"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:text="Update Your Info.: "
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/upload_btn"
+        android:layout_width="190dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/imageView"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/select_btn"
+        android:backgroundTint="@color/white"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:stateListAnimator="@null"
+        android:text="Upload Image"
+        android:textColor="#04B60B"
+        app:cornerRadius="20dp"
+        app:strokeColor="@color/black"
+        app:strokeWidth="1dp" />
+
+    <EditText
+        android:id="@+id/UserName"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/for_error_show"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/ic_baseline_account_box_24"
+        android:ems="10"
+        android:hint=" Enter Your Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/UserContact"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/UserName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:drawableLeft="@drawable/ic_baseline_phone_24"
+        android:ems="10"
+        android:hint=" Enter Your Contact No."
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/update_account"
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/UserContact"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#04B60B"
+        android:drawableLeft="@drawable/ic_baseline_system_update_24"
+        android:drawableTint="@color/white"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:stateListAnimator="@null"
+        android:text="Update Account"
+        android:textColor="@color/white"
+        app:cornerRadius="20dp"
+        app:strokeColor="@color/black"
+        app:strokeWidth="1dp"
+
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="240dp" />
+
+
+
+</RelativeLayout>

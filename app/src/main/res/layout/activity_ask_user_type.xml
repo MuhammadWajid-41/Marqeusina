@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AskUserType">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="226dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/user_profile"
+        app:civ_border_color="@color/black" />
+
+
+    <ImageView
+        android:id="@+id/marquee_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="50dp"
+        android:layout_toLeftOf="@id/goto_marquee_owner_side"
+        android:src="@drawable/ic_baseline_house_24" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/goto_marquee_owner_side"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#04B60B"
+        android:elevation="10dp"
+        android:stateListAnimator="@null"
+        android:text="Owner"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="20dp"
+        app:strokeColor="@color/black"
+        app:strokeWidth="0.5dp" />
+
+    <ImageView
+        android:id="@+id/user_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/marquee_icon"
+        android:layout_marginTop="30dp"
+        android:layout_toLeftOf="@id/goto_marquee_owner_side"
+        android:src="@drawable/ic_baseline_account_box_24" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/goto_marquee_finder_side"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/goto_marquee_owner_side"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#FFFFFF"
+        android:elevation="10dp"
+        android:stateListAnimator="@null"
+        android:text="Looking for Marquee"
+        android:textAllCaps="false"
+        android:textColor="#04B60B"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="20dp"
+        app:strokeColor="@color/black"
+        app:strokeWidth="0.5dp" />
+
+    <TextView
+        android:id="@id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/goto_marquee_finder_side"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="________CONTACT US________"
+        android:textColor="#04B60B"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/insta"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/tv1"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/insta" />
+
+    <ImageView
+        android:id="@+id/fb"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/tv1"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/insta"
+        android:clickable="true"
+        android:src="@drawable/fb" />
+
+    <ImageView
+        android:id="@+id/phone"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/tv1"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/fb"
+        android:src="@drawable/download" />
+
+</RelativeLayout>

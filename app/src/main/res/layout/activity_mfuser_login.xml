@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".MFUserLoginActivity">
+
+    <TextView
+        android:id="@+id/appname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:gravity="center"
+        android:text="Marqeusina"
+        android:textColor="#808080"
+        android:textSize="60dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/moto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Let The Marquees\nCome To You"
+        android:textColor="#04B60B"
+        android:textSize="21dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="393dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/moto"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:ems="10"
+        android:hint=" Email Address"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="390dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/Email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint=" Password"
+        android:drawableLeft="@drawable/ic_baseline_remove_red_eye_24"
+        android:inputType="textPassword" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/Login"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/Password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#04B60B"
+        android:elevation="10dp"
+        android:ems="10"
+        android:hint="Login"
+        android:stateListAnimator="@null"
+        android:textAlignment="center"
+        android:textColorHint="#FBF2F2"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:cornerRadius="25dp"
+
+        />
+
+    <CheckBox
+        android:id="@+id/ch1"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/Login"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="10dp"
+        android:text="Remember Me"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/ForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ch1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="Forgot Password?"
+        android:textColor="#04B60B"
+        android:textSize="19dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ch1"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/ForgotPassword"
+        android:gravity="center"
+        android:text="Register"
+        android:textColor="#04B60B"
+        android:textSize="19dp"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="42dp"
+        android:layout_height="32dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

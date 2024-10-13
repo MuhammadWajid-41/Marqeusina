@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homefragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <AutoCompleteTextView
+        android:id="@+id/search_box"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="275dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="65dp"
+        android:drawableLeft="@drawable/ic_baseline_search_24"
+        android:drawableTint="#04B60B"
+        android:hint="Find Marquee" />
+
+    <ImageButton
+        android:id="@+id/search_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="65dp"
+        android:layout_toRightOf="@id/search_box"
+        android:backgroundTint="#FFFFFF"
+        android:elevation="10dp"
+        android:src="@drawable/ic_baseline_search_24"
+        android:stateListAnimator="@null"
+        app:strokeColor="@color/black"
+        app:strokeWidth="0.5dp"
+        app:tint="#4AE838" />
+
+    <ImageView
+        android:id="@+id/filter_icon"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/search_icon"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="21dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/filter"
+        app:tint="@color/black" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/search_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/filter_icon"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="left"
+        android:text=" Search Filter"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="115dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/tv2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:text="Ratings Range:"
+        android:textColor="@color/black"
+        android:textStyle="normal" />
+
+    <SeekBar
+        android:id="@+id/slider1"
+        android:layout_width="160dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/tv2"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@id/tv3"
+        android:value="12.34"
+        android:valueFrom="0.0"
+        android:valueTo="50.0" />
+
+    <TextView
+        android:id="@+id/spinner_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv2"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/slider1"
+        android:gravity="left"
+        android:text="0"
+        android:textColor="#808080"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/ch1"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_below="@id/how_far_tv"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="5dp"
+        android:text="Enable location"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/how_far_tv"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/tv4"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:text="Distance Limit [kms.]: "
+        android:textColor="@color/black"
+        android:textStyle="normal" />
+
+    <EditText
+        android:id="@+id/how_far_ed"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/tv4"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/how_far_tv"
+        android:inputType="numberDecimal"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="115dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/tv3"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:text="Hall Price Range:"
+        android:textColor="@color/black"
+        android:textStyle="normal" />
+
+    <SeekBar
+        android:id="@+id/slider2"
+        android:layout_width="160dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/tv3"
+        android:layout_marginTop="11dp"
+        android:layout_toRightOf="@id/tv4" />
+
+    <TextView
+        android:id="@+id/spinner_Hall_price_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv3"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@id/slider2"
+        android:gravity="left"
+        android:text="0"
+        android:textColor="#808080"
+        android:textStyle="bold" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/filtered_seacrh"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@id/ch1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-5dp"
+        android:backgroundTint="#04B60B"
+        android:drawableLeft="@drawable/ic_baseline_search_24"
+        android:drawableTint="@color/white"
+        android:elevation="10dp"
+        android:gravity="left"
+        android:stateListAnimator="@null"
+        android:text="Apply Filter"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:cornerRadius="25dp"
+        app:strokeColor="@color/black"
+        app:strokeWidth="0.75dp" />
+
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/filtered_seacrh"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Recommendations"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="170dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/tv5"
+        android:layout_marginLeft="18dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner"
+        android:layout_marginTop="5dp" />
+
+
+
+</RelativeLayout>

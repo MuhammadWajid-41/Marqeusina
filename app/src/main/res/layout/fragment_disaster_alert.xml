@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DisasterAlert">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="85dp"
+        android:gravity="center"
+        android:text="Notify Booked Users \nAbout Disaster"
+        android:textColor="#808080"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/disaster_alert"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:drawableLeft="@drawable/ic_baseline_add_alert_24"
+        android:drawableTint="#EC0808"
+        android:hint=" Enter About Disaster..."
+        android:inputType="textMultiLine"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="normal" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/send_disaster_alert"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/disaster_alert"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#04B60B"
+        android:drawableLeft="@drawable/ic_baseline_send_24"
+        android:drawableTint="@color/white"
+        android:elevation="10dp"
+        android:stateListAnimator="@null"
+        android:text="Notify Users"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:cornerRadius="20dp"
+        app:strokeColor="@color/black"
+        app:strokeWidth="0.5dp" />
+
+
+
+</RelativeLayout>
